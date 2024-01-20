@@ -1,0 +1,11 @@
+.app-component-container {
+  flex: 0 0 auto;
+  width: var(--dl-size-size-xxlarge);
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.app-component-text1 {
+  margin-top: var(--dl-space-space-twounits);
+}
