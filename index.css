@@ -1,6 +1,6 @@
 .home-container {
-  width: 100%;
   height: 100vh;
+  resize: both;
   display: flex;
   overflow: auto;
   min-height: 100vh;
@@ -9,7 +9,7 @@
   background-size: cover;
   justify-content: flex-start;
   background-image: url("public/external/bg-1500h.jpeg");
-  background-origin: border-box;
+  background-attachment: fixed;
 }
 .home-content {
   flex: 0 0 auto;
@@ -29,7 +29,7 @@
   padding: var(--dl-space-space-oneandhalfunits);
   position: relative;
   max-width: 416;
-  background: #e0e0e099;
+  background: #e0e0e0b0;
   align-items: flex-start;
   border-radius: 20px;
   flex-direction: column;
@@ -52,9 +52,6 @@
   font-weight: 700;
 }
 @media(max-width: 1600px) {
-  .home-container {
-    background-position: 0 -100px;
-  }
   .home-contacts {
     margin-top: 200px;
   }
