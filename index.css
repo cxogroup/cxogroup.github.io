@@ -27,7 +27,7 @@
   display: flex;
   padding: var(--dl-space-space-oneandhalfunits);
   position: relative;
-  max-width: 416px;
+  max-width: 22em;
   background: #e0e0e0b0;
   box-shadow: 5px 5px 10px 0px #4e4646;
   align-items: flex-start;
