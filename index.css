@@ -13,7 +13,9 @@
 }
 .home-content {
   flex: 0 0 auto;
+  width: 100%;
   display: flex;
+  position: relative;
   align-self: flex-start;
   align-items: flex-start;
   padding-top: var(--dl-space-space-sixunits);
@@ -25,10 +27,11 @@
   flex: 0 0 auto;
   height: 100%;
   display: flex;
-  padding: var(--dl-space-space-oneandhalfunits);
+  padding: var(--dl-space-space-twounits);
   position: relative;
   max-width: 22em;
-  background: #e0e0e0b0;
+  min-width: 250px;
+  background: #e0e0e0c0;
   box-shadow: 5px 5px 10px 0px #4e4646;
   align-items: flex-start;
   border-radius: 20px;
@@ -36,61 +39,53 @@
   background-blend-mode: difference;
 }
 .home-text {
-  width: 100%;
-  text-align: center;
+  align-self: center;
 }
 .home-ingress {
+  align-self: center;
   text-align: center;
+}
+.home-info {
+  margin-top: 200px;
+}
+.home-text09 {
+  margin-top: 200px;
 }
 .home-contacts {
   left: 24px;
   bottom: 0px;
-  margin-top: 200px;
+  align-self: center;
   margin-bottom: var(--dl-space-space-twounits);
 }
-.home-text03 {
-  font-weight: 700;
-}
-@media(max-width: 1600px) {
-  .home-text03 {
-    font-weight: 700;
-  }
-  .home-text06 {
-    line-height: 1.5;
-  }
-  .home-text07 {
-    line-height: 1.5;
-  }
-  .home-text09 {
-    font-size: 0.7em;
-  }
-}
 @media(max-width: 991px) {
-  .home-content {
-    width: 100%;
-    position: relative;
-  }
   .home-body {
     margin: auto;
   }
 }
+@media(max-width: 767px) {
+  .home-content {
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+  }
+}
 @media(max-width: 479px) {
   .home-content {
-    padding-top: var(--dl-space-space-fourunits);
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
-    padding-bottom: var(--dl-space-space-fourunits);
+    min-width: 360px;
   }
-  .home-text03 {
-    font-weight: 700;
+  .home-body {
+    width: 100%;
   }
-  .home-text06 {
-    line-height: 1.5;
+  .home-text {
+    font-size: 6em;
   }
-  .home-text07 {
-    line-height: 1.5;
+  .home-ingress {
+    font-size: 1.3em;
+    align-self: center;
   }
-  .home-text09 {
-    font-size: 0.7em;
+  .home-info {
+    margin-top: 150px;
+  }
+  .home-contacts {
+    align-self: center;
   }
 }
